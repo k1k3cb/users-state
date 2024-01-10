@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
   *,
@@ -28,4 +28,8 @@ export const GlobalStyles = createGlobalStyle`
     margin-bottom: 0;
     padding-left: 0;
   }
+`;
+
+export const Title = styled.h1`
+	text-align: center;
 `;
