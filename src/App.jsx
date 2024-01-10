@@ -36,8 +36,9 @@ const filterByActive = (users, isActive) => {
 //* Función ordenar por búsqueda
 
 const filterByName = (users, search) => {
-	if (!search) return [...users];
-	else return users.filter(user => user.includes(search));
+	const searchWord = search.toLowerCase();
+	if (!searchWord) return [...users];
+	return users.filter(user => user.name.toLowerCase().includes(searchWord));
 };
 
 //* Función ordenar: según la opción del select ordeno los usuarios
