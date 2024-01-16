@@ -1,11 +1,6 @@
 import { FormContainer } from './styles';
 
-const FormFilter = ({
-	
-	setSearch,
-	setIsActive,
-	setOrderBy
-}) => {
+const FormFilter = ({ setSearch, setIsActive, setOrderBy }) => {
 	return (
 		<FormContainer>
 			<div>

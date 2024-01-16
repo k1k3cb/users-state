@@ -10,6 +10,7 @@ const UsersTable = ({ filteredUsers }) => {
 					nickName={user.username}
 					image={user.profileImage}
 					active={user.active}
+					userId={user.userId}
 				/>
 			))}
 		</>
